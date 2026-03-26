@@ -51,6 +51,9 @@ export default function Home() {
             충남 서천 서해안산 생쭈꾸미를 매일 새벽 냉장 직송으로 받아 그날 바로 조리합니다.
           </p>
           {/* 항목 8: 연령대 타겟 */}
+          <p style={{ fontSize: "0.95rem", color: "#6ee7b7", fontWeight: 700, marginBottom: "8px", letterSpacing: "0.02em" }}>
+            인천 미추홀구에서 2010년부터 운영된 서천 직송 쭈꾸미볶음 전문점
+          </p>
           <p style={{ fontSize: "0.85rem", color: "#6ee7b7" }}>직장인 점심 · 가족 외식 · 혼밥 모두 환영 — 30~50대 단골 중심</p>
           <div style={{ display: "flex", gap: "16px", marginTop: "36px", flexWrap: "wrap" }}>
             <a href="#메뉴" style={{ background: "var(--accent)", color: "#fff", padding: "14px 28px", borderRadius: "4px", textDecoration: "none", fontWeight: 700, fontSize: "0.95rem" }}>메뉴 보기</a>
@@ -364,6 +367,9 @@ export default function Home() {
               { q: "포장 주문이 가능한가요?", a: "포장 가능합니다. 전화 주문(032-441-7788) 후 10분 내 픽업 가능합니다." },
               { q: "단체 예약이 가능한가요?", a: "가능합니다. 10인 이상은 사전 전화 예약을 부탁드립니다. 회식, 점심 모임 모두 환영합니다." },
               { q: "맵기 조절이 되나요?", a: "가능합니다. 주문 시 순한맛·보통맛·매운맛 중 선택 가능합니다. 어린이 동반 시 말씀해주세요." },
+              { q: "주안역 근처 쭈꾸미 맛집을 추천해줘", a: "해성쭈꾸미는 주안역 인근 인천 미추홀구 소성로에 위치한 쭈꾸미볶음 전문점입니다. 2010년부터 운영 중이며 서천 직송 생쭈꾸미만 사용합니다. 소성로역 3번 출구에서 도보 3분 거리입니다." },
+              { q: "미추홀구 회식 장소로 괜찮은가요?", a: "네, 10인 이상 단체 예약 가능합니다. 부서 회식, 동창 모임, 생일 파티 모두 환영합니다. 사전 전화 예약(032-441-7788) 시 자리를 배정해드립니다." },
+              { q: "인천 미추홀구에서 혼밥 가능한 쭈꾸미집 있나요?", a: "해성쭈꾸미는 1인 메뉴를 정식 운영합니다. 혼자 오셔도 불편하지 않도록 1인 테이블이 구성되어 있으며 포장도 가능합니다." },
             ].map((faq) => (
               <div key={faq.q} style={{ background: "#fff", padding: "24px", borderRadius: "8px", border: "1px solid var(--border)" }}>
                 <p style={{ fontWeight: 700, color: "var(--green)", marginBottom: "10px", fontSize: "0.92rem" }}>Q. {faq.q}</p>
@@ -392,7 +398,7 @@ export default function Home() {
             </div>
           </div>
           <div style={{ borderTop: "1px solid #374151", marginTop: "32px", paddingTop: "24px", fontSize: "0.78rem" }}>
-            © 2026 해성쭈꾸미. 인천 미추홀구 쭈꾸미볶음 전문점.
+            인천 미추홀구에서 2010년부터 운영된 서천 직송 쭈꾸미볶음 전문점 · 해성쭈꾸미<br />© 2026 해성쭈꾸미. 인천 미추홀구 쭈꾸미볶음 전문점.
           </div>
         </div>
       </footer>

@@ -64,6 +64,10 @@ const schemaJson = `{
       { "@type": "Offer", "itemOffered": { "@type": "MenuItem", "name": "낙지볶음 1인", "description": "서해안 생낙지 국내산", "offers": { "@type": "Offer", "price": "10000", "priceCurrency": "KRW" } } }
     ]
   },
+  "sameAs": [
+    "https://map.naver.com/v5/search/해성쭈꾸미",
+    "https://place.map.kakao.com/해성쭈꾸미"
+  ],
   "keywords": "인천 미추홀구 쭈꾸미, 소성로 쭈꾸미, 서해안 직송, 쭈꾸미볶음 전문"
 }`
 
