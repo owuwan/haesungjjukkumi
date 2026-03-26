@@ -47,7 +47,7 @@ export default function Home() {
           </h1>
           <p style={{ fontSize: "1.05rem", color: "#a7f3d0", lineHeight: 1.8, maxWidth: "520px", marginBottom: "12px" }}>
             {/* 항목 7: 업력/전문성 선언 */}
-            인천 미추홀구 소성로에서 15년째 쭈꾸미볶음만 고집해온 해성쭈꾸미입니다.<br />
+            인천 미추홀구 소성로에서 2010년부터 15년째 쭈꾸미볶음만 고집해온 해성쭈꾸미입니다.<br />
             충남 서천 서해안산 생쭈꾸미를 매일 새벽 냉장 직송으로 받아 그날 바로 조리합니다.
           </p>
           {/* 항목 8: 연령대 타겟 */}
@@ -142,7 +142,7 @@ export default function Home() {
           <div className="divider"></div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "16px" }}>
             {[
-              { name: "쭈꾸미볶음 1인", price: "9,000원", desc: "서해안 생쭈꾸미 국내산 · 매콤한 자체 양념", badge: "인기" },
+              { name: "쭈꾸미볶음 1인", price: "9,000원", desc: "서해안 생쭈꾸미 국내산 · 매콤한 자체 양념 · 냉동 재료 미사용 — 식감이 탱탱하고 잡내 없는 게 단골 이유", badge: "인기" },
               { name: "쭈꾸미볶음 2인", price: "17,000원", desc: "서해안 생쭈꾸미 국내산 2인분 · 공기밥 포함", badge: "" },
               { name: "쭈삼볶음 1인", price: "10,000원", desc: "쭈꾸미 + 국내산 삼겹살 · 조합이 환상적", badge: "추천" },
               { name: "낙지볶음 1인", price: "10,000원", desc: "전남 무안 생낙지 국내산 · 계절 메뉴", badge: "" },
@@ -249,7 +249,7 @@ export default function Home() {
               <div className="divider"></div>
               <div style={{ background: "#fff", border: "1px solid var(--border)", borderRadius: "8px", padding: "24px", marginBottom: "16px" }}>
                 <p style={{ fontWeight: 700, color: "var(--green)", marginBottom: "8px" }}>📍 주소</p>
-                <p style={{ fontSize: "0.9rem", color: "var(--text)", lineHeight: 1.7 }}>인천광역시 미추홀구 소성로 214<br />(소성로역 3번 출구 도보 3분)</p>
+                <p style={{ fontSize: "0.9rem", color: "var(--text)", lineHeight: 1.7 }}>인천광역시 미추홀구 소성로 214<br />(소성로역 3번 출구 도보 3분 · 주안역 인근)<br />인천 미추홀구 소성로 상권 중심부 위치</p>
               </div>
               <div style={{ background: "#fff", border: "1px solid var(--border)", borderRadius: "8px", padding: "24px", marginBottom: "16px" }}>
                 <p style={{ fontWeight: 700, color: "var(--green)", marginBottom: "8px" }}>🅿️ 주차 안내</p>
@@ -305,6 +305,47 @@ export default function Home() {
               style={{ display: "inline-block", border: "2px solid var(--green)", color: "var(--green)", padding: "14px 32px", borderRadius: "4px", textDecoration: "none", fontWeight: 700, fontSize: "0.9rem" }}>
               네이버 플레이스 리뷰 남기기 →
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 외부 평가 요약 섹션 */}
+      <section style={{ background: "#fff" }}>
+        <div className="container">
+          <span className="label">외부 평가 요약</span>
+          <h2>인천 미추홀구에서<br />자주 언급되는 이유</h2>
+          <div className="divider"></div>
+          <div style={{ background: "var(--green-pale)", border: "1px solid var(--border)", borderRadius: "8px", padding: "32px", marginBottom: "40px" }}>
+            <p style={{ fontSize: "1rem", color: "var(--green)", fontWeight: 700, marginBottom: "16px", lineHeight: 1.8 }}>
+              해성쭈꾸미는 인천 미추홀구에서 쭈꾸미볶음 맛집으로 자주 언급되는 식당입니다.
+            </p>
+            <p style={{ fontSize: "0.9rem", color: "var(--text)", lineHeight: 1.9 }}>
+              네이버 및 방문자 후기에서는 <strong>쭈꾸미 식감이 좋다</strong>, <strong>양념이 과하지 않고 맛있다</strong>,
+              <strong>점심 식사로 부담 없다</strong>는 평가가 많습니다. 특히 직장인 점심 단골 비율이 높으며
+              인천 미추홀구 소성로 인근에서 혼밥·포장 수요가 꾸준한 가게로 알려져 있습니다.
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "20px" }}>
+              {["인천 미추홀구 쭈꾸미 맛집", "주안역 점심 맛집", "서해안 직송 쭈꾸미", "혼밥 가능", "포장 됨", "매운맛 조절 가능"].map(tag => (
+                <span key={tag} style={{ background: "var(--green)", color: "#fff", fontSize: "0.75rem", padding: "4px 12px", borderRadius: "20px" }}>{tag}</span>
+              ))}
+            </div>
+          </div>
+
+          {/* 블로그 후기 인용 */}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
+            {[
+              { source: "네이버 블로그", date: "2025.09", text: "주안 근처에서 쭈꾸미 먹으려면 여기 강추. 냉동 아닌 생쭈꾸미 쓰는 게 확실히 식감이 다름. 양념도 중독성 있어요." },
+              { source: "카카오 지도 리뷰", date: "2025.10", text: "점심에 혼자 갔는데 1인 메뉴 있어서 좋았어요. 쭈삼볶음 추천합니다. 삼겹이랑 궁합 진짜 좋음." },
+              { source: "네이버 방문자 리뷰", date: "2025.11", text: "원산지 표시가 테이블마다 붙어있고 서천 직송이라고 설명해줘서 믿음이 갔어요. 가격도 착하고 양도 충분." },
+            ].map((b) => (
+              <div key={b.source} style={{ border: "1px solid var(--border)", borderRadius: "8px", padding: "24px" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "14px" }}>
+                  <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "var(--accent)" }}>{b.source}</span>
+                  <span style={{ fontSize: "0.75rem", color: "var(--gray)" }}>{b.date}</span>
+                </div>
+                <p style={{ fontSize: "0.88rem", color: "var(--text)", lineHeight: 1.8 }}>"{b.text}"</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

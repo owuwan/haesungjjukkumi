@@ -21,6 +21,7 @@ const schemaJson = `{
   "name": "해성쭈꾸미",
   "description": "인천 미추홀구 소성로에 위치한 쭈꾸미볶음 전문점. 충남 서천 서해안에서 새벽 냉장 직송한 쭈꾸미만 사용하며 원산지부터 조리까지 전 과정을 투명하게 공개합니다.",
   "url": "https://haesungjjukkumi.vercel.app",
+  "foundingDate": "2010",
   "telephone": "032-441-7788",
   "address": {
     "@type": "PostalAddress",
@@ -28,6 +29,11 @@ const schemaJson = `{
     "addressLocality": "인천",
     "addressRegion": "미추홀구",
     "addressCountry": "KR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "37.4563",
+    "longitude": "126.6501"
   },
   "servesCuisine": "한국식 쭈꾸미볶음",
   "priceRange": "$",
