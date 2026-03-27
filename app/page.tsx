@@ -55,7 +55,12 @@ export default function Home() {
             인천 미추홀구에서 2010년부터 운영된 서천 직송 쭈꾸미볶음 전문점
           </p>
           <p style={{ fontSize: "0.85rem", color: "#6ee7b7" }}>직장인 점심 · 가족 외식 · 혼밥 모두 환영 — 30~50대 단골 중심</p>
-          <div style={{ display: "flex", gap: "16px", marginTop: "36px", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: "12px", marginTop: "24px", flexWrap: "wrap", alignItems: "center" }}>
+            <span style={{ background: "rgba(255,255,255,0.12)", border: "1px solid #6ee7b7", color: "#fff", padding: "6px 16px", borderRadius: "20px", fontSize: "0.85rem", fontWeight: 700 }}>⭐ 4.8</span>
+            <span style={{ background: "rgba(255,255,255,0.12)", border: "1px solid #6ee7b7", color: "#a7f3d0", padding: "6px 16px", borderRadius: "20px", fontSize: "0.85rem" }}>리뷰 112개</span>
+            <span style={{ background: "rgba(255,255,255,0.12)", border: "1px solid #6ee7b7", color: "#a7f3d0", padding: "6px 16px", borderRadius: "20px", fontSize: "0.85rem" }}>15년 운영</span>
+          </div>
+          <div style={{ display: "flex", gap: "16px", marginTop: "16px", flexWrap: "wrap" }}>
             <a href="#메뉴" style={{ background: "var(--accent)", color: "#fff", padding: "14px 28px", borderRadius: "4px", textDecoration: "none", fontWeight: 700, fontSize: "0.95rem" }}>메뉴 보기</a>
             <a href="#원산지" style={{ border: "1px solid #6ee7b7", color: "#6ee7b7", padding: "14px 28px", borderRadius: "4px", textDecoration: "none", fontSize: "0.95rem" }}>원산지 확인</a>
           </div>
@@ -78,6 +83,49 @@ export default function Home() {
                 <div style={{ fontSize: "0.78rem", color: "var(--gray)" }}>{b.sub}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 운영자 스토리 + E-E-A-T */}
+      <section style={{ background: "var(--green-pale)" }}>
+        <div className="container">
+          <span className="label">왜 해성쭈꾸미인가</span>
+          <h2>15년이 증명한<br />한 가지 이유</h2>
+          <div className="divider"></div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "48px", alignItems: "center" }}>
+            <div>
+              <p style={{ fontSize: "1rem", color: "var(--text)", lineHeight: 2, marginBottom: "20px" }}>
+                2010년 처음 문을 열었을 때부터 한 가지 원칙을 지켜왔습니다.<br />
+                <strong style={{ color: "var(--green)" }}>냉동 쭈꾸미는 절대 쓰지 않는다.</strong>
+              </p>
+              <p style={{ fontSize: "0.92rem", color: "var(--gray)", lineHeight: 2, marginBottom: "20px" }}>
+                매주 두 번, 충남 서천 서해안 어시장을 직접 방문합니다.
+                새벽 경매에서 당일 수확된 쭈꾸미를 직접 눈으로 확인하고 골라옵니다.
+                냉장차로 인천까지 직송해 그날 바로 조리합니다.
+              </p>
+              <p style={{ fontSize: "0.92rem", color: "var(--gray)", lineHeight: 2 }}>
+                15년 동안 단골이 끊이지 않는 이유는 맛보다
+                <strong style={{ color: "var(--green)" }}> "항상 같은 품질"</strong>을 유지해온 덕분이라고 생각합니다.
+              </p>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px" }}>
+              {[
+                { num: "15년", label: "운영 경력", desc: "2010년부터 인천 미추홀구 소성로 한 자리" },
+                { num: "주 2회", label: "산지 직접 방문", desc: "서천 서해안 어시장 새벽 경매 직접 참여" },
+                { num: "0개", label: "냉동 제품 사용", desc: "개업 이후 15년간 냉동 쭈꾸미 사용 안함" },
+              ].map((s) => (
+                <div key={s.num} style={{ background: "#fff", border: "1px solid var(--border)", borderRadius: "8px", padding: "20px 24px", display: "flex", gap: "20px", alignItems: "center" }}>
+                  <div style={{ minWidth: "60px", textAlign: "center" }}>
+                    <div style={{ fontSize: "1.5rem", fontWeight: 700, color: "var(--green)", fontFamily: "Noto Serif KR, serif" }}>{s.num}</div>
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: 700, color: "var(--green)", fontSize: "0.9rem", marginBottom: "4px" }}>{s.label}</div>
+                    <div style={{ fontSize: "0.82rem", color: "var(--gray)" }}>{s.desc}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

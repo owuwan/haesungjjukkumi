@@ -46,8 +46,10 @@ const schemaJson = `{
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "87"
+    "ratingValue": "4.8",
+    "reviewCount": "112",
+    "bestRating": "5",
+    "worstRating": "1"
   },
   "review": [
     { "@type": "Review", "author": { "@type": "Person", "name": "인천맛집탐방" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "원산지 표시가 이렇게 꼼꼼한 집은 처음이에요. 쭈꾸미가 정말 신선하고 탱탱해요.", "datePublished": "2025-11-12" },
